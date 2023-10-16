@@ -20,7 +20,7 @@ export default function AlertDialog() {
   return (
     <div>
       <Button variant="outlined" onClick={handleClickOpen}>
-        Open alert dialog
+        OPEN
       </Button>
       <Dialog
         open={open}
@@ -29,18 +29,17 @@ export default function AlertDialog() {
         aria-describedby="alert-dialog-description"
       >
         <DialogTitle id="alert-dialog-title">
-          {"Use Google's location service?"}
+          {"Are you a Human ?"}
         </DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+            Please tell us if you are Human or a Robot !
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
+          <Button onClick={handleClose}>Robot</Button>
           <Button onClick={handleClose} autoFocus>
-            Agree
+            Human
           </Button>
         </DialogActions>
       </Dialog>

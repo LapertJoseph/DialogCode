@@ -1,4 +1,4 @@
-import AlertDialog from './Modal/Modal'
+import AlertDialog from './Components/Modal/Modal'
 
 import './App.css'
 
